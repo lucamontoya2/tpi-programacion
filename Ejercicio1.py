@@ -14,16 +14,16 @@ print("Conjunto C:", c)
 # ================================
 
 # 1. calcular e interpretar:
-plataformas2= a and b 
+plataformas2= a & b 
 print("Usuarios que utilizan ambas plataformas:",plataformas2)
 
-plataforma1= a or b
+plataforma1= a | b
 print("Usuarios que utilizan al menos una plataforma:", plataforma1)
 
-usuariosSinErrores= ((a and b) - c)
+usuariosSinErrores= ((a & b) - c)
 print("Usuarios que utilizan la plataforma, pero no presentan errores:",usuariosSinErrores)
 
-usuariosExclusivos= (a - b) or (b-a)
+usuariosExclusivos= (a - b) | (b-a)
 print("Usuarios que utilizan exclusivamente una sola plataforma:",usuariosExclusivos)
 
 # 2. Expresar al menos dos resultados usando comprensión de conjuntos.
@@ -55,7 +55,7 @@ print("Usuarios que aparecen en 𝐶 pero no en 𝐴 ∪ 𝐵:",usuariosC)
 
 # 4. definir p, q y r.
 
-todos = a or b or c 
+todos = a | b | c 
 
 criticos = []
 no_criticos = []
